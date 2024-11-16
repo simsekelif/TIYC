@@ -43,7 +43,7 @@ let cards =[
     forbiddenWords: ["volcano", "fiery", "liquid", "rock", "lava"]
   }
 ]
-// function for getting a new card.
+// function for the "next"button.
 const getCard = (() => {
   let index = 0; 
 
