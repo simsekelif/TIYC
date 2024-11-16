@@ -28,7 +28,7 @@ const timer = setInterval(() => {
 // };
 // console.log(addOn);
 
-
+//cards are here !
 let cards =[ 
   firstCard = {
   word: "Watt",
@@ -43,3 +43,13 @@ let cards =[
     forbiddenWords: ["volcano", "fiery", "liquid", "rock", "lava"]
   }
 ]
+// function for getting a new card.
+const getCard = (() => {
+  let index = 0; 
+
+  return () => {
+      if (index < cards.length) {
+          return cards[index++];
+      }
+  };
+});
