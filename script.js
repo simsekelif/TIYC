@@ -1,19 +1,23 @@
 // timer function
 
-//Do not forget to change the amount!
+//Do not forget to change the seconds as 60!
 let count = 5;
+  // printed timer to the playground with this attribute.
+  document.getElementById("secondsLeft").innerText = count;
 const timer = setInterval(() => {
   count--;
   // This line prints the count to the console!
   console.log(count);
-  // printed timer to the playground with this attribute.
-  document.getElementById("secondsLeft").innerText = count;
   
   if (count === 0) {
     clearInterval(timer);
-    document.getElementById("gameButton").disabled = true;
-    console.log("Time's up! Your score: ");
-  }
+    
+    const buttons = document.querySelectorAll("#buttons button");
+    buttons.forEach((button) => {
+      button.disabled = true;
+  });
+  console.log("Time's up! Your score: "); 
+}
 }, 1000);
 
 
@@ -28,7 +32,8 @@ const timer = setInterval(() => {
 // };
 // console.log(addOn);
 
-//cards are here !
+
+//cards are below!
 let cards =[ 
   firstCard = {
   word: "Watt",
