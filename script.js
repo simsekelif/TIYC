@@ -20,17 +20,18 @@ const timer = setInterval(() => {
 }
 }, 1000);
 
+//score function
 
-// score function
+let score = -1 ;
+for(let i = 0; i < 50; i++) {
 
-// let score = 0;
-// for(var score = 0; i < 20; i++) {
-
-// }
-// function addOn(){
-//   score++
-// };
-// console.log(addOn);
+}
+function addOn(){
+  score++;
+  document.getElementById("showScore").innerText = score
+};
+console.log(score);
+addOn();
 
 
 //cards are below!
@@ -48,7 +49,7 @@ let cards =[
     forbiddenWords: ["volcano", "fiery", "liquid", "rock", "lava"]
   }
 ]
-// function for the "next"button.
+// function for the buttons.
 const getCard = (() => {
   let index = 0; 
 

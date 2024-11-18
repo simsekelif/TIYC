@@ -7,7 +7,7 @@
     <title>Tell Me If You Can!</title>
 </head>
 <body>
-    <h3>Score: 0</h3>
+    <h3 >Score: <span id="showScore"></span></h3>
     <h3>Timer: <span id="secondsLeft"></span></h3>
 <div id="CardOnScreen">
     <h3>Main Word</h3>
@@ -18,9 +18,9 @@
     <p>Forbidden word</p>
 </div>
  <div id="buttons">
-    <button>Wrong! <span id="wrongButton"></span></button>
-    <button>Pass <span id="passButton"></span></button>
-    <button onclick="getCard()">Next! <span id="nextButton"></span></button>
+    <button onclick="addOn()">Wrong! <span id="wrongButton"></span></button>
+    <button onclick="addOn()">Pass <span id="passButton"></span></button>
+    <button onclick="addOn()">Next! <span id="nextButton"></span></button>
 </div>
 
     <script src="./script.js"></script>
