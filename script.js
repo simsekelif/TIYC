@@ -4,8 +4,11 @@
 let count = 5;
   // printed timer to the playground with this attribute.
   document.getElementById("secondsLeft").innerText = count;
+ 
 const timer = setInterval(() => {
   count--;
+  // need to update again.
+  document.getElementById("secondsLeft").innerText = count;
   // This line prints the count to the console!
   console.log(count);
   
