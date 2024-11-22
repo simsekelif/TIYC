@@ -10,16 +10,18 @@
     <h3 >Score: <span id="showScore"></span></h3>
     <h3>Timer: <span id="secondsLeft"></span></h3>
 <div id="CardOnScreen">
-    <h3>Main Word</h3>
-    <p>Forbidden word</p>
-    <p>Forbidden word</p>
-    <p>Forbidden word</p>
-    <p>Forbidden word</p>
-    <p>Forbidden word</p>
+    <h3 id="mainWord">Main Word</h3>
+    <ul id="forbiddenWords">
+         <li>Forbidden Word</li>
+         <li>Forbidden Word</li>
+         <li>Forbidden Word</li>
+         <li>Forbidden Word</li>
+         <li>Forbidden Word</li>
+    </ul>
 </div>
  <div id="buttons">
     <button onclick="subtractFrom()">Wrong! <span id="wrongButton"></span></button>
-    <button onclick="addOn()">Pass <span id="passButton"></span></button>
+    <button onclick="getCard()">Pass <span id="passButton"></span></button>
     <button onclick="addOn()">Next! <span id="nextButton"></span></button>
 </div>
 

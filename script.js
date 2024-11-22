@@ -74,3 +74,4 @@ const getCard = (() => {
       }
   };
 });
+getCard();
