@@ -1,7 +1,7 @@
 // timer function
 
 //Do not forget to change the seconds as 60!
-let count = 5;
+let count = 10;
   // printed timer to the playground with this attribute.
   document.getElementById("secondsLeft").innerText = count;
  
@@ -18,8 +18,10 @@ const timer = setInterval(() => {
     const buttons = document.querySelectorAll("#buttons button");
     buttons.forEach((button) => {
       button.disabled = true;
+
+      console.log("Time's up! Your score: "); 
   });
-  console.log("Time's up! Your score: "); 
+  
 }
 }, 1000);
 
@@ -35,6 +37,16 @@ function addOn(){
 };
 console.log(score);
 addOn();
+
+//function for wrong button
+function subtractFrom() {
+  if (score > 0){
+    score--;
+  }
+  document.getElementById("showScore").innerText = score
+};
+console.log(score);
+subtractFrom();
 
 
 //cards are below!
