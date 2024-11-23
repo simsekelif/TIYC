@@ -49,21 +49,40 @@ console.log(score);
 subtractFrom();
 
 
-//cards are below!
-let cards =[ 
-  firstCard = {
+//cards are below! (will be replaced with JSON later!!!)
+let cards =[ {
   word: "Watt",
   forbiddenWords: ["joule", "unit", "power","electric", "potential"]
 },
-  secondCard = {
+ {
     word: "Telescope",
     forbiddenWords: ["star", "observatory", "planet", "look", "astronomy"]
   },
-  thirdCard = {
+   {
     word: "Magma",
     forbiddenWords: ["volcano", "fiery", "liquid", "rock", "lava"]
   }
 ]
+// showing the card on the screen
+let currentCardIndex = 0;
+
+function showCard(cardsIndex){
+  const card = cards[cardsIndex];
+  const wordElement = document.getElementById("mainWord");
+  const forbiddenWordsElement = document.getElementById("forbiddenWords");
+//should update main word
+  wordElement.innerText = cards.word;
+//should clean the forbidden words list
+  forbiddenWordsElement.innerText ="";
+  
+ card.forbiddenWords.forEach((word) => {
+  const li = document.createElement("li");
+  li.innerText = word;
+  forbiddenWordsElement.appendChild("li");
+
+ });
+
+}
 // function for the buttons.
 const getCard = (() => {
   let index = 0; 
