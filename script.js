@@ -71,18 +71,19 @@ function showCard(cardsIndex){
   const wordElement = document.getElementById("mainWord");
   const forbiddenWordsElement = document.getElementById("forbiddenWords");
 //should update main word
-  wordElement.innerText = cards.word;
+  wordElement.innerText = card.word;
 //should clean the forbidden words list
-  forbiddenWordsElement.innerText ="";
-  
+  forbiddenWordsElement.innerHTML ="";
+//adds new words to the forbidden words list
  card.forbiddenWords.forEach((word) => {
   const li = document.createElement("li");
   li.innerText = word;
-  forbiddenWordsElement.appendChild("li");
+  forbiddenWordsElement.appendChild(li);
 
  });
 
 }
+showCard(0);
 // function for the buttons.
 const getCard = (() => {
   let index = 0; 
