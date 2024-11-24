@@ -70,9 +70,9 @@ function showCard(cardsIndex){
   const card = cards[cardsIndex];
   const wordElement = document.getElementById("mainWord");
   const forbiddenWordsElement = document.getElementById("forbiddenWords");
-//should update main word
+//update main word
   wordElement.innerText = card.word;
-//should clean the forbidden words list
+//clean the forbidden words list
   forbiddenWordsElement.innerHTML ="";
 //adds new words to the forbidden words list
  card.forbiddenWords.forEach((word) => {
@@ -84,14 +84,12 @@ function showCard(cardsIndex){
 
 }
 showCard(0);
-// function for the buttons.
-const getCard = (() => {
-  let index = 0; 
 
-  return () => {
-      if (index < cards.length) {
-          return cards[index++];
-      }
-  };
-});
-getCard();
+// function for the buttons for a new card.
+function getNewCard(){
+  currentCardIndex++;
+  if(currentCardIndex >= cards.length){
+    currentCardIndex = 0;
+  }
+  showCard();
+}
