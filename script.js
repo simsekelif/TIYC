@@ -91,5 +91,5 @@ function getNewCard(){
   if(currentCardIndex >= cards.length){
     currentCardIndex = 0;
   }
-  showCard();
+  showCard(currentCardIndex);
 }
