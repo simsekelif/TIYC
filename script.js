@@ -56,9 +56,14 @@ let currentCardIndex = 0;
 fetch('cards.json')
   .then((response)=> {
     return response.json();
-  }
-
-  )
+  })
+  .then((data) => {
+    cards = data;
+    showCard(currentCardIndex);
+  })
+  .catch((error) => {
+    console.log('error',error);
+  })
 
 function showCard(cardsIndex){
   const card = cards[cardsIndex];
