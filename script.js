@@ -49,22 +49,16 @@ console.log(score);
 subtractFrom();
 
 
-//cards are below! (will be replaced with JSON later!!!)
-let cards =[ {
-  word: "Watt",
-  forbiddenWords: ["joule", "unit", "power","electric", "potential"]
-},
- {
-    word: "Telescope",
-    forbiddenWords: ["star", "observatory", "planet", "look", "astronomy"]
-  },
-   {
-    word: "Magma",
-    forbiddenWords: ["volcano", "fiery", "liquid", "rock", "lava"]
-  }
-]
-// showing the card on the screen
+//cards are below! with JSON
+let cards =[];
 let currentCardIndex = 0;
+
+fetch('cards.json')
+  .then((response)=> {
+    return response.json();
+  }
+
+  )
 
 function showCard(cardsIndex){
   const card = cards[cardsIndex];
