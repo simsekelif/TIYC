@@ -55,6 +55,9 @@ function updateScore (){
   }
 }
 
+//event listeners for the buttons
+document.getElementById("nextButton"),addEventListener("click",subtractFrom);
+document.getElementById("wrongButton"),addEventListener("click",addOn);
 
 //cards are below! with JSON
 let cards =[];
