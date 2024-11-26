@@ -37,6 +37,7 @@ function addOn(){
   updateScore();
 };
 
+
 //function for wrong button
 function subtractFrom() {
   if (score > 0){
@@ -44,6 +45,7 @@ function subtractFrom() {
   }
   updateScore();
 };
+
 
 // update function for adding and substracking from the score
 function updateScore (){
@@ -56,8 +58,15 @@ function updateScore (){
 }
 
 //event listeners for the buttons
-document.getElementById("nextButton"),addEventListener("click",subtractFrom);
-document.getElementById("wrongButton"),addEventListener("click",addOn);
+document.getElementById("nextButton").addEventListener("click", () => {
+  addOn();
+  getNewCard();
+});
+document.getElementById("wrongButton").addEventListener("click", () => {
+  subtractFrom();
+  getNewCard();
+})
+document.getElementById("passButton").addEventListener("click",getNewCard);
 
 //cards are below! with JSON
 let cards =[];
@@ -112,6 +121,7 @@ function getNewCard(){
   }
   showCard(currentCardIndex);
 }
+getNewCard();
 
 // let timerAlert = new Promise(function(resolve,reject){
 //   if (count === 0) {
