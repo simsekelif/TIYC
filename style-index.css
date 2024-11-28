@@ -1,51 +1,107 @@
 html,
-
 body {
-    margin: 0;
-    padding: 20;
-    font-family:'Arial', sans-serif;
-    line-height: 2;
-    color: #483D8B;
-    background-image: url('background.jpg'); 
-    background-size: cover; /* Makes the image cover the entire background */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed;
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
-    url('background.jpg');
+  margin: 0;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  line-height: 2;
+  color: #483d8b;
+  background-image: url("background.jpg");
+  background-size: cover; /* Makes the image cover the entire background */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("background.jpg");
+}
+
+.container {
+  width: 80%; /* Adjusts with screen size */
+  max-width: 800px; /* Prevents it from becoming too large */
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: #483d8b;
+
+  margin-top: 20px; /* Extra space between two containers */
+  border-radius: 15px; /* Smooth the corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); /* Subtle shadow */
+}
+
+.container h2 {
+  margin: 10px 0; /* Less margin around the element */
+  padding: 5px; /* Small padding */
+  font-size: 1.8em; /* Adjust font size */
+}
+.container h3 {
+  margin: 8px 0; /* Minimal margin */
+  padding: 3px; /* Minimal padding */
+  font-size: 1.5em; /* Adjust font size */
+}
+
+.list {
+  text-align: start;
+}
+
+/* Buttons should be flexible */
+button {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 200px; /* Limited width for larger screens */
+  margin: 5px auto;
+  padding: 15px;
+  font-size: 1em;
+  font-style: bold;
+  border: none;
+  background-color: #ffd700;
+  color: #483d8b;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  border-color: #483d8b;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+button:hover {
+  background-color: #ffe34f; /* Slightly brighter gold */
+  transform: scale(1.05); /* Subtle zoom effect */
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: 2px solid #483d8b; /* Adds a focus outline for accessibility */
+}
+
+/* to make it fonts fully responsive */
+h1 {
+  font-size: 2.5em; /* Scales based on screen size */
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-size: 1.8em;
+}
+
+p,
+ol li {
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
   }
-  
-  .container {
-    width: 80%; /* Adjusts with screen size */
-    max-width: 800px; /* Prevents it from becoming too large */
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    box-shadow: #483D8B;
-    box-shadow:0px 0px 0px 10px #483D8B ;
-    margin-top: 80px; /* Extra space between two containers */
+
+  h2,
+  h3 {
+    font-size: 1.5em;
   }
- 
-  
-  /* Buttons should be flexible */
-  button {
-    width: 100%; /* Full width for smaller screens */
-    max-width: 200px; /* Limited width for larger screens */
-    margin: 10px auto;
-    padding: 15px;
-    font-size: 1em;
-    font-style: bold;
-    border: none;
-    background-color: #FFD700;
-    color: #483D8B;
-    border-radius: 7px;
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    border-color: #483D8B;
-    justify-content: space-around;
-    margin-top: 40px;
-    
+
+  p,
+  ol li {
+    font-size: 0.9em;
   }
- 
+}
