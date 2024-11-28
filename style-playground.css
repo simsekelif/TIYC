@@ -1,0 +1,32 @@
+html,
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 10px;;
+    padding: 10px ;
+    color: #483D8B;
+    background-image: url('background.jpg'); 
+    background-size: cover; /* Makes the image cover the entire background */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+}
+button {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 200px; /* Limited width for larger screens */
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1em;
+    font-style: bold;
+    border: none;
+    background-color: #FFD700;
+    color: #483D8B;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    border-color: #483D8B;
+    justify-content: space-around;
+    
+  }
+ 

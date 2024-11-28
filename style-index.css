@@ -1,0 +1,51 @@
+html,
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Arial', sans-serif;
+    line-height: 2;
+    color: #483D8B;
+    background-image: url('background.jpg'); 
+    background-size: cover; /* Makes the image cover the entire background */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+    url('background.jpg');
+  }
+  
+  .container {
+    width: 80%; /* Adjusts with screen size */
+    max-width: 800px; /* Prevents it from becoming too large */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: #483D8B;
+    box-shadow:0px 0px 0px 10px #483D8B ;
+    margin-top: 80px; /* Extra space between two containers */
+  }
+ 
+  
+  /* Buttons should be flexible */
+  button {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 200px; /* Limited width for larger screens */
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1em;
+    font-style: bold;
+    border: none;
+    background-color: #FFD700;
+    color: #483D8B;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    border-color: #483D8B;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+  }
+
