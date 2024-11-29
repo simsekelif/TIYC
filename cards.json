@@ -1,16 +1,496 @@
 {
-  "cards": [
-    {
-      "word": "Watt",
-      "forbiddenWords": ["joule", "unit", "power", "electric", "potential"]
-    },
-    {
-      "word": "Telescope",
-      "forbiddenWords": ["star", "observatory", "planet", "look", "astronomy"]
-    },
-    {
-      "word": "Magma",
-      "forbiddenWords": ["volcano", "fiery", "liquid", "rock", "lava"]
-    }
+    "cards": [
+      {
+          "word": "Pizza",
+          "forbiddenWords": [
+              "Cheese",
+              "Crust",
+              "Toppings",
+              "Slice",
+              "Delivery"
+          ]
+      },
+      {
+          "word": "Unicorn",
+          "forbiddenWords": [
+              "Horn",
+              "Mythical",
+              "Horse",
+              "Magic",
+              "Rainbow"
+          ]
+      },
+      {
+          "word": "Space",
+          "forbiddenWords": [
+              "Stars",
+              "Astronaut",
+              "Rocket",
+              "Planet",
+              "Galaxy"
+          ]
+      },
+      {
+          "word": "Ocean",
+          "forbiddenWords": [
+              "Fish",
+              "Waves",
+              "Blue",
+              "Shark",
+              "Boat"
+          ]
+      },
+      {
+          "word": "Guitar",
+          "forbiddenWords": [
+              "Strings",
+              "Music",
+              "Electric",
+              "Pick",
+              "Chord"
+          ]
+      },
+      {
+          "word": "Chocolate",
+          "forbiddenWords": [
+              "Sweet",
+              "Brown",
+              "Candy",
+              "Bar",
+              "Cocoa"
+          ]
+      },
+      {
+          "word": "Robot",
+          "forbiddenWords": [
+              "AI",
+              "Machine",
+              "Tech",
+              "Human",
+              "Automation"
+          ]
+      },
+      {
+          "word": "Mountain",
+          "forbiddenWords": [
+              "Climb",
+              "Hiking",
+              "Peak",
+              "Snow",
+              "Rock"
+          ]
+      },
+      {
+          "word": "Camera",
+          "forbiddenWords": [
+              "Photo",
+              "Lens",
+              "Shoot",
+              "Film",
+              "Picture"
+          ]
+      },
+      {
+          "word": "Dragon",
+          "forbiddenWords": [
+              "Fire",
+              "Fantasy",
+              "Scales",
+              "Fly",
+              "Knight"
+          ]
+      },
+      {
+          "word": "Laptop",
+          "forbiddenWords": [
+              "Computer",
+              "Keyboard",
+              "Screen",
+              "Portable",
+              "Battery"
+          ]
+      },
+      {
+          "word": "Rainbow",
+          "forbiddenWords": [
+              "Colors",
+              "Sky",
+              "Arc",
+              "Rain",
+              "Spectrum"
+          ]
+      },
+      {
+          "word": "Volcano",
+          "forbiddenWords": [
+              "Eruption",
+              "Lava",
+              "Ash",
+              "Crater",
+              "Mountain"
+          ]
+      },
+      {
+          "word": "Soccer",
+          "forbiddenWords": [
+              "Ball",
+              "Goal",
+              "Team",
+              "Field",
+              "Kick"
+          ]
+      },
+      {
+          "word": "Cactus",
+          "forbiddenWords": [
+              "Desert",
+              "Plant",
+              "Thorns",
+              "Succulent",
+              "Green"
+          ]
+      },
+      {
+          "word": "Snowman",
+          "forbiddenWords": [
+              "Winter",
+              "Frosty",
+              "Cold",
+              "Carrot",
+              "Hat"
+          ]
+      },
+      {
+          "word": "Clock",
+          "forbiddenWords": [
+              "Time",
+              "Hour",
+              "Minute",
+              "Second",
+              "Tick"
+          ]
+      },
+      {
+          "word": "Bicycle",
+          "forbiddenWords": [
+              "Pedal",
+              "Wheel",
+              "Ride",
+              "Handlebar",
+              "Chain"
+          ]
+      },
+      {
+          "word": "Moon",
+          "forbiddenWords": [
+              "Night",
+              "Space",
+              "Lunar",
+              "Crater",
+              "Orbit"
+          ]
+      },
+      {
+          "word": "Penguin",
+          "forbiddenWords": [
+              "Bird",
+              "Antarctica",
+              "Black",
+              "White",
+              "Waddle"
+          ]
+      },
+      {
+          "word": "Apple",
+          "forbiddenWords": [
+              "Fruit",
+              "Red",
+              "Green",
+              "Pie",
+              "Core"
+          ]
+      },
+      {
+          "word": "Bridge",
+          "forbiddenWords": [
+              "River",
+              "Connect",
+              "Road",
+              "Span",
+              "Arch"
+          ]
+      },
+      {
+          "word": "Treasure",
+          "forbiddenWords": [
+              "Gold",
+              "Pirate",
+              "Chest",
+              "Map",
+              "Jewels"
+          ]
+      },
+      {
+          "word": "Library",
+          "forbiddenWords": [
+              "Books",
+              "Read",
+              "Quiet",
+              "Shelf",
+              "Borrow"
+          ]
+      },
+      {
+          "word": "Castle",
+          "forbiddenWords": [
+              "King",
+              "Queen",
+              "Fortress",
+              "Tower",
+              "Medieval"
+          ]
+      },
+      {
+          "word": "Coffee",
+          "forbiddenWords": [
+              "Drink",
+              "Cup",
+              "Caffeine",
+              "Brew",
+              "Espresso"
+          ]
+      },
+      {
+          "word": "Jungle",
+          "forbiddenWords": [
+              "Trees",
+              "Wild",
+              "Animal",
+              "Rain",
+              "Adventure"
+          ]
+      },
+      {
+          "word": "Train",
+          "forbiddenWords": [
+              "Rail",
+              "Station",
+              "Track",
+              "Engine",
+              "Travel"
+          ]
+      },
+      {
+          "word": "Balloon",
+          "forbiddenWords": [
+              "Air",
+              "Float",
+              "Color",
+              "Helium",
+              "Pop"
+          ]
+      },
+      {
+          "word": "Chocolate",
+          "forbiddenWords": [
+              "Candy",
+              "Brown",
+              "Sweet",
+              "Bar",
+              "Cocoa"
+          ]
+      },
+      {
+          "word": "Iceberg",
+          "forbiddenWords": [
+              "Cold",
+              "Glacier",
+              "Water",
+              "Float",
+              "Titanic"
+          ]
+      },
+      {
+          "word": "Fireworks",
+          "forbiddenWords": [
+              "Explosion",
+              "Color",
+              "Sky",
+              "Celebrate",
+              "Bang"
+          ]
+      },
+      {
+          "word": "Circus",
+          "forbiddenWords": [
+              "Tent",
+              "Clown",
+              "Acrobat",
+              "Show",
+              "Animals"
+          ]
+      },
+      {
+          "word": "Pirate",
+          "forbiddenWords": [
+              "Ship",
+              "Treasure",
+              "Sea",
+              "Sword",
+              "Captain"
+          ]
+      },
+      {
+          "word": "Elephant",
+          "forbiddenWords": [
+              "Trunk",
+              "Tusks",
+              "Large",
+              "Gray",
+              "Zoo"
+          ]
+      },
+      {
+          "word": "Honey",
+          "forbiddenWords": [
+              "Bee",
+              "Sweet",
+              "Jar",
+              "Comb",
+              "Yellow"
+          ]
+      },
+      {
+          "word": "Forest",
+          "forbiddenWords": [
+              "Trees",
+              "Nature",
+              "Woods",
+              "Animal",
+              "Green"
+          ]
+      },
+      {
+          "word": "Castle",
+          "forbiddenWords": [
+              "King",
+              "Fortress",
+              "Tower",
+              "Medieval",
+              "Queen"
+          ]
+      },
+      {
+          "word": "Beach",
+          "forbiddenWords": [
+              "Sand",
+              "Sea",
+              "Waves",
+              "Sun",
+              "Vacation"
+          ]
+      },
+      {
+          "word": "Rocket",
+          "forbiddenWords": [
+              "Space",
+              "Launch",
+              "NASA",
+              "Fuel",
+              "Engine"
+          ]
+      },
+      {
+          "word": "Cowboy",
+          "forbiddenWords": [
+              "Horse",
+              "Hat",
+              "Western",
+              "Gun",
+              "Rodeo"
+          ]
+      },
+      {
+          "word": "Vampire",
+          "forbiddenWords": [
+              "Blood",
+              "Fangs",
+              "Dracula",
+              "Night",
+              "Bat"
+          ]
+      },
+      {
+          "word": "Dinosaur",
+          "forbiddenWords": [
+              "Fossil",
+              "Jurassic",
+              "Prehistoric",
+              "Extinct",
+              "Reptile"
+          ]
+      },
+      {
+          "word": "Fairy",
+          "forbiddenWords": [
+              "Magic",
+              "Wings",
+              "Small",
+              "Pixie",
+              "Fantasy"
+          ]
+      },
+      {
+          "word": "Cake",
+          "forbiddenWords": [
+              "Dessert",
+              "Bake",
+              "Frosting",
+              "Slice",
+              "Birthday"
+          ]
+      },
+      {
+          "word": "Planet",
+          "forbiddenWords": [
+              "Earth",
+              "Orbit",
+              "Space",
+              "Solar",
+              "World"
+          ]
+      },
+      {
+          "word": "Wolf",
+          "forbiddenWords": [
+              "Howl",
+              "Pack",
+              "Forest",
+              "Animal",
+              "Moon"
+          ]
+      },
+      {
+          "word": "Rose",
+          "forbiddenWords": [
+              "Flower",
+              "Red",
+              "Thorn",
+              "Love",
+              "Bloom"
+          ]
+      },
+      {
+          "word": "Mirror",
+          "forbiddenWords": [
+              "Reflection",
+              "Glass",
+              "Look",
+              "Wall",
+              "Frame"
+          ]
+      }
   ]
-}
+  }
+
+

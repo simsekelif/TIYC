@@ -37,6 +37,7 @@ button:disabled {
   background: #ccc;
   color: #666;
   cursor: not-allowed;
+  pointer-events: none;
 }
 
 #CardOnScreen {
@@ -46,6 +47,7 @@ button:disabled {
   color: #483d8b;
   font-family: "Arial", sans-serif;
   margin: 50px auto; /*centers the card on the screen * */
+  margin-bottom: 20px;
   line-height: 1.5;
   max-width: 400px;
   padding: 20px; /* this adds the space inside the card */
