@@ -52,21 +52,21 @@ button:disabled {
   text-align: center;
   width: 60%;
 }
-#cardOnScreen.mainWord {
+#CardOnScreen #mainWord {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: capitalize;
+  border-bottom: solid #483d8b;
+ 
 }
-#cardOnScreen#forbiddenWords {
-  color: #a9a9a9;
+#CardOnScreen #forbiddenWords {
   font-size: 1em;
   margin-top: 10px;
+  
 }
-#cardOnScreen#forbiddenWords ul {
-  list-style-type: none;
-}
-#cardOnScreen:hover {
+
+#CardOnScreen:hover {
   transition: all 0.3s ease;
 }
 .indicators {

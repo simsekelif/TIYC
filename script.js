@@ -87,9 +87,9 @@ function showCard(cardsIndex) {
   forbiddenWordsElement.innerHTML = "";
   //adds new words to the forbidden words list
   card.forbiddenWords.forEach((word) => {
-    const li = document.createElement("li");
-    li.innerText = word;
-    forbiddenWordsElement.appendChild(li);
+    const p = document.createElement("p");
+    p.innerText = word;
+    forbiddenWordsElement.appendChild(p);
   });
 }
 // function for the buttons for a new card.
