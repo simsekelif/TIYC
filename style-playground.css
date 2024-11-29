@@ -1,32 +1,83 @@
 html,
 body {
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif ;
-    margin: 10px;;
-    padding: 10px ;
-    color: #483D8B;
-    background-image: url('background.jpg'); 
-    background-size: cover; /* Makes the image cover the entire background */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  color: #483d8b;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 button {
-    width: 100%; /* Full width for smaller screens */
-    max-width: 200px; /* Limited width for larger screens */
-    margin: 10px auto;
-    padding: 15px;
-    font-size: 1em;
-    font-style: bold;
-    border: none;
-    background-color: #FFD700;
-    color: #483D8B;
-    border-radius: 7px;
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    border-color: #483D8B;
-    justify-content: space-around;
-    
-  }
- 
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  background-color: #ffd700;
+  color: #483d8b;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  border-color: #483d8b;
+  justify-content: space-around;
+}
+button:hover {
+  background-color: #ffe34f;
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+#CardOnScreen {
+  width: 60%;
+  max-width: 400px;
+  margin: 50px auto; /*centers the card on the screen * */
+  padding: 20px; /* this adds the space inside the card */
+  background-color: #fff;
+  color: #483d8b;
+  border-radius: 18px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+}
+#cardOnScreen.mainWord {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+#cardOnScreen#forbiddenWords {
+  font-size: 1em;
+  color: #a9a9a9;
+  margin-top: 10px;
+}
+#cardOnScreen#forbiddenWords ul {
+  list-style-type: none;
+}
+#cardOnScreen:hover {
+  transition: all 0.3s ease;
+}
+.indicators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #483d8b;
+  color: #ffd700;
+  border-radius: 18px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 800px;
+}
