@@ -60,7 +60,7 @@ document.getElementById("wrongButton").addEventListener("click", () => {
 });
 document.getElementById("passButton").addEventListener("click", getNewCard);
 
-// cards are below! hardcoded version has been updayed with JSON
+// cards are below! with JSON
 let cards = [];
 let currentCardIndex = 0;
 
@@ -80,10 +80,10 @@ function showCard(cardsIndex) {
   const card = cards[cardsIndex];
   const wordElement = document.getElementById("mainWord");
   const forbiddenWordsElement = document.getElementById("forbiddenWords");
-  //update main word
+  //updates main word
   wordElement.innerText = card.word;
 
-  //clean the forbidden words list
+  //cleans the forbidden words list
   forbiddenWordsElement.innerHTML = "";
   //adds new words to the forbidden words list
   card.forbiddenWords.forEach((word) => {

@@ -39,37 +39,30 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: none;
 }
-
 #CardOnScreen {
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
   color: #483d8b;
   font-family: "Arial", sans-serif;
+  line-height: 1.5;
   margin: 50px auto; /*centers the card on the screen * */
   margin-bottom: 20px;
-  line-height: 1.5;
   max-width: 400px;
   padding: 20px; /* this adds the space inside the card */
   text-align: center;
   width: 60%;
 }
 #CardOnScreen #mainWord {
+  border-bottom: solid #483d8b;
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: capitalize;
-  border-bottom: solid #483d8b;
- 
 }
 #CardOnScreen #forbiddenWords {
   font-size: 1em;
   margin-top: 10px;
-  
-}
-
-#CardOnScreen:hover {
-  transition: all 0.3s ease;
 }
 .indicators {
   align-items: center;
