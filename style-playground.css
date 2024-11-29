@@ -39,6 +39,11 @@ button:disabled {
   cursor: not-allowed;
   pointer-events: none;
 }
+/*This is for accesibility */
+button:focus { 
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+  }
 #CardOnScreen {
   background-color: #fff;
   border-radius: 18px;

@@ -73,7 +73,7 @@ fetch("./cards.json")
     showCard(currentCardIndex);
   })
   .catch((error) => {
-    console.error("error", error);
+    console.error("Sorry, not sorry!", error);
   });
 
 function showCard(cardsIndex) {

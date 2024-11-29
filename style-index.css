@@ -61,6 +61,11 @@ button:hover {
   transform: scale(1.05); /*zoom effect */
   transition: all 0.3s ease;
 }
+button:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+  }
+  
 /* to make it fonts fully responsive */
 h1 {
   font-size: 2.5em; /* Scales based on screen size */
