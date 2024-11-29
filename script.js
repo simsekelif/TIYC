@@ -11,12 +11,10 @@ const timer = setInterval(() => {
   count--;
   // need to update again.
   document.getElementById("secondsLeft").innerText = count;
-  // console.log(count);
 
   if (count === 0) {
     clearInterval(timer);
-    document.getElementById("times_up").innerText = "Time's Up";
-    // alert("Times Up !!");
+    document.getElementById("times_up").innerText = "💣 Time's Up!";
     const buttons = document.querySelectorAll("#buttons button");
     buttons.forEach((button) => {
       button.disabled = true;
@@ -62,7 +60,7 @@ document.getElementById("wrongButton").addEventListener("click", () => {
 });
 document.getElementById("passButton").addEventListener("click", getNewCard);
 
-// cards are below! with JSON
+// cards are below! hardcoded version has been updayed with JSON
 let cards = [];
 let currentCardIndex = 0;
 
@@ -77,14 +75,6 @@ fetch("./cards.json")
   .catch((error) => {
     console.error("error", error);
   });
-
-// for (let index = 0; index < JSON.cards.length; index++) {
-//   const element = JSON.cards[index];
-//   cards.push(element);
-// }
-// console.log({cards, JSON})
-
-//  console.log("Json Data",JSON);
 
 function showCard(cardsIndex) {
   const card = cards[cardsIndex];
@@ -102,8 +92,6 @@ function showCard(cardsIndex) {
     forbiddenWordsElement.appendChild(li);
   });
 }
-// showCard(0);
-
 // function for the buttons for a new card.
 function getNewCard() {
   currentCardIndex++;
@@ -112,20 +100,3 @@ function getNewCard() {
   }
   showCard(currentCardIndex);
 }
-
-// let timerAlert = new Promise(function(resolve,reject){
-
-//   if (count === 0) {
-//     resolve ("time's flying!")
-//   } else {
-//     reject ('take your time!')
-//   }
-// })
-
-// timerAlert
-//   .then(function(fromResolve){
-//     alert('Sorry, ' + fromResolve)
-//   })
-//   .catch(function(fromReject){
-//     alert("take your time "+ fromReject)
-//   })

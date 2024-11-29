@@ -1,32 +1,32 @@
 html,
 body {
+  background-attachment: fixed;
   background-color: aliceblue;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #483d8b;
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
   padding: 10px;
-  color: #483d8b;
-  background-image: url("background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
 }
 button {
-  width: 100%;
-  max-width: 200px;
-  margin: 10px auto;
-  padding: 15px;
+  background-color: #ffd700;
+  border: none;
+  border-color: #483d8b;
+  border-radius: 7px;
+  color: #483d8b;
+  cursor: pointer;
+  display: flex;
   font-size: 1em;
   font-weight: bold;
-  border: none;
-  background-color: #ffd700;
-  color: #483d8b;
-  border-radius: 7px;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  border-color: #483d8b;
   justify-content: space-around;
+  margin: 10px auto;
+  max-width: 200px;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
 }
 button:hover {
   background-color: #ffe34f;
@@ -40,17 +40,17 @@ button:disabled {
 }
 
 #CardOnScreen {
-  width: 60%;
-  max-width: 400px;
-  margin: 50px auto; /*centers the card on the screen * */
-  padding: 20px; /* this adds the space inside the card */
   background-color: #fff;
-  color: #483d8b;
   border-radius: 18px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  color: #483d8b;
   font-family: "Arial", sans-serif;
+  margin: 50px auto; /*centers the card on the screen * */
   line-height: 1.5;
+  max-width: 400px;
+  padding: 20px; /* this adds the space inside the card */
+  text-align: center;
+  width: 60%;
 }
 #cardOnScreen.mainWord {
   font-size: 2em;
@@ -59,8 +59,8 @@ button:disabled {
   text-transform: capitalize;
 }
 #cardOnScreen#forbiddenWords {
-  font-size: 1em;
   color: #a9a9a9;
+  font-size: 1em;
   margin-top: 10px;
 }
 #cardOnScreen#forbiddenWords ul {
@@ -70,14 +70,14 @@ button:disabled {
   transition: all 0.3s ease;
 }
 .indicators {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   background-color: #483d8b;
-  color: #ffd700;
   border-radius: 18px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  color: #ffd700;
+  display: flex;
+  justify-content: space-between;
   margin: 20px auto;
   max-width: 800px;
+  padding: 10px 20px;
 }
