@@ -50,7 +50,7 @@ function updateScore() {
 }
 
 // event listeners for the buttons
-document.getElementById("nextButton").addEventListener("click", () => {
+document.getElementById("correctButton").addEventListener("click", () => {
   addOn();
   getNewCard();
 });
