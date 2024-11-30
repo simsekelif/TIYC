@@ -16,28 +16,6 @@ body {
   padding: 10px;
 }
 
-.container {
-  border-radius: 15px; 
-  box-shadow: #483d8b;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
-  margin: 0 auto;
-  margin-top: 20px; /* Extra space between two containers */
-  max-width: 800px;
-  padding: 10px;
-  text-align: center;
-  width: 80%; /* Adjusts with screen size */
-}
-
-.container h2 {
-  font-size: 1.8em; /* Adjust font size */
-  margin: 10px 0; /* Less margin around the element */
-  padding: 5px;
-}
-.container h3 {
-  font-size: 1.5em; /* Adjust font size */
-  margin: 8px 0;
-  padding: 3px; 
-}
 button {
   width: 100%; /* Full width for smaller screens */
   max-width: 200px; /* Limited width for larger screens */
@@ -56,16 +34,42 @@ button {
   justify-content: space-around;
   margin-top: 40px;
 }
+
+.container {
+  border-radius: 15px;
+  box-shadow: #483d8b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+  margin: 0 auto;
+  margin-top: 20px; /* Extra space between two containers */
+  max-width: 800px;
+  padding: 25px 50px;
+  text-align: center;
+  width: 80%; /* Adjusts with screen size */
+}
+
+.container h2 {
+  font-size: 1.8em; /* Adjust font size */
+  margin: 10px 0; /* Less margin around the element */
+  padding: 5px;
+}
+
+.container h3 {
+  font-size: 1.5em; /* Adjust font size */
+  margin: 8px 0;
+  padding: 3px;
+}
+
 button:hover {
   background-color: #ffe34f;
   transform: scale(1.05); /*zoom effect */
   transition: all 0.3s ease;
 }
+
 button:focus {
-    outline: 2px solid #FFD700;
-    outline-offset: 2px;
-  }
-  
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
 /* to make it fonts fully responsive */
 h1 {
   font-size: 2.5em; /* Scales based on screen size */
@@ -75,6 +79,10 @@ h1 {
 h2,
 h3 {
   font-size: 1.8em;
+}
+
+.list {
+  text-align: start;
 }
 
 p {
@@ -91,7 +99,7 @@ p {
     font-size: 1.5em;
   }
 
-  p{
+  p {
     font-size: 0.9em;
   }
 }

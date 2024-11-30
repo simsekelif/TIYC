@@ -11,6 +11,7 @@ body {
   margin: 10px;
   padding: 10px;
 }
+
 button {
   background-color: #ffd700;
   border: none;
@@ -28,22 +29,26 @@ button {
   text-align: center;
   width: 100%;
 }
+
 button:hover {
   background-color: #ffe34f;
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
+
 button:disabled {
   background: #ccc;
   color: #666;
   cursor: not-allowed;
   pointer-events: none;
 }
+
 /*This is for accesibility */
 button:focus { 
     outline: 2px solid #FFD700;
     outline-offset: 2px;
-  }
+}
+
 #CardOnScreen {
   background-color: #fff;
   border-radius: 18px;
@@ -58,17 +63,21 @@ button:focus {
   text-align: center;
   width: 60%;
 }
+
 #CardOnScreen #mainWord {
   border-bottom: solid #483d8b;
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 8px;
   text-transform: capitalize;
 }
+
 #CardOnScreen #forbiddenWords {
   font-size: 1em;
   margin-top: 10px;
 }
+
 .indicators {
   align-items: center;
   background-color: #483d8b;

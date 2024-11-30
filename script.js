@@ -93,6 +93,7 @@ function showCard(cardsIndex) {
   });
 }
 // function for the buttons for a new card.
+
 function getNewCard() {
   currentCardIndex++;
   if (currentCardIndex >= cards.length) {
