@@ -1,15 +1,12 @@
-// import JSON from './cards.json' with { type: "json" };
+// Timer function
+let count = 60;
 
-// timer function
-//Do not forget to change the seconds as 60!
-let count = 10;
-
-// printed timer to the playground with this attribute.
+// Printed timer to the playground with this attribute.
 document.getElementById("secondsLeft").innerText = count;
 
 const timer = setInterval(() => {
   count--;
-  // need to update again.
+  // Need to update again.
   document.getElementById("secondsLeft").innerText = count;
 
   if (count === 0) {
@@ -22,7 +19,7 @@ const timer = setInterval(() => {
   }
 }, 1000);
 
-// score function
+// Score function
 
 let score = 0;
 
@@ -31,7 +28,7 @@ function addOn() {
   updateScore();
 }
 
-// function for wrong button
+// Function for wrong button
 function subtractFrom() {
   if (score > 0) {
     score--;
@@ -39,7 +36,7 @@ function subtractFrom() {
   updateScore();
 }
 
-// update function for adding and substracting from the score
+// Update function for after adding and substracting from the score
 function updateScore() {
   const scoreElement = document.getElementById("showScore");
   if (scoreElement) {
@@ -49,7 +46,7 @@ function updateScore() {
   }
 }
 
-// event listeners for the buttons
+// Event listeners for the buttons
 document.getElementById("correctButton").addEventListener("click", () => {
   addOn();
   getNewCard();
@@ -60,14 +57,12 @@ document.getElementById("wrongButton").addEventListener("click", () => {
 });
 document.getElementById("passButton").addEventListener("click", getNewCard);
 
-// cards are below! with JSON
+// Cards are below! with JSON
 let cards = [];
 let currentCardIndex = 0;
 
 fetch("./cards.json")
-  .then((response) => {
-    return response.json();
-  })
+  .then((response) => response.json())
   .then((data) => {
     cards = data.cards;
     showCard(currentCardIndex);
@@ -76,24 +71,26 @@ fetch("./cards.json")
     console.error("Sorry, not sorry!", error);
   });
 
+  // Function for showing cards
 function showCard(cardsIndex) {
   const card = cards[cardsIndex];
   const wordElement = document.getElementById("mainWord");
   const forbiddenWordsElement = document.getElementById("forbiddenWords");
-  //updates main word
+
+  // Updates main word
   wordElement.innerText = card.word;
 
-  //cleans the forbidden words list
+  // Cleans the forbidden words list
   forbiddenWordsElement.innerHTML = "";
-  //adds new words to the forbidden words list
+
+  // Adds new words to the forbidden words list
   card.forbiddenWords.forEach((word) => {
     const p = document.createElement("p");
     p.innerText = word;
     forbiddenWordsElement.appendChild(p);
   });
 }
-// function for the buttons for a new card.
-
+// Function for the buttons for a new card.
 function getNewCard() {
   currentCardIndex++;
   if (currentCardIndex >= cards.length) {
