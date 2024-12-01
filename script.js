@@ -20,7 +20,6 @@ const timer = setInterval(() => {
 }, 1000);
 
 // Score function
-
 let score = 0;
 
 function addOn() {
