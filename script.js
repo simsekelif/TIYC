@@ -71,7 +71,7 @@ fetch("./cards.json")
     console.error("Sorry, not sorry!", error);
   });
 
-  // Function for showing cards
+// Function for showing cards
 function showCard(cardsIndex) {
   const card = cards[cardsIndex];
   const wordElement = document.getElementById("mainWord");
@@ -90,6 +90,7 @@ function showCard(cardsIndex) {
     forbiddenWordsElement.appendChild(p);
   });
 }
+
 // Function for the buttons for a new card.
 function getNewCard() {
   currentCardIndex++;
