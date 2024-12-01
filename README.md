@@ -4,7 +4,7 @@ Welcome to my very first project "Tell Me If You Can!", a challenge where quick 
 You can see the live version here: https://vercel.com/elif-simseks-projects/tell-me-if-you-can
 
 ##About the Project
-This project is my first step into the web development journey. I have usede HTML, CSS, JavaScript. Responsiveness and accesibilty were also 2 ipmportant keys while developing this project.
+This project is my first step into the web development journey. I have used HTML, CSS, JavaScript.
 
 ##How to Play
 **Get Ready:** Gather your friends and pick your team. One player explains the "Main Word" while avoiding the "Forbidden Words".
@@ -17,7 +17,7 @@ Stuck? Use "Pass!" to move on without losing a point.
 
 **Win the Glory:** Compete, laugh, and celebrate the winner!
 
-##Installation
+##Development
 **Clone the Repository:**
 git clone https://github.com/your-username/tell-me-if-you-can.git
 
@@ -25,7 +25,7 @@ git clone https://github.com/your-username/tell-me-if-you-can.git
 cd tell-me-if-you-can
 
 **Run Locally:**
-Open the index.html file in your browser or use a live server tool like the VS Code Live Server extension.
+Open the index.html file in your browser or use a live server tool like the [VS Code Live Server extension](https://github.com/ritwickdey/vscode-live-server-plus-plus).
 
 ##Technologies Used
 **HTML5:** Semantic structure is constructed with it.
